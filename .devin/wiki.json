@@ -1,0 +1,233 @@
+{
+  "repo_notes": [
+    {
+      "content": ""
+    }
+  ],
+  "pages": [
+    {
+      "title": "Overview",
+      "purpose": "Introduce the Zero Trust Environment with Containerized Solution repository, explaining its purpose as an MIT Lab research project and high-level architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Build System",
+      "purpose": "Document the build infrastructure, including compilation of security variants and artifact management",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Makefile and Compilation",
+      "purpose": "Detail the Makefile targets for building zookd/zookfs variants with different security configurations (exstack, nxstack, withssp)",
+      "parent": "Build System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Build Artifacts and Version Control",
+      "purpose": "Explain ignored files, build outputs, and version control configuration across the repository",
+      "parent": "Build System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Development Environment",
+      "purpose": "Document editor configurations and development setup (Vim settings, tab preferences)",
+      "parent": "Build System",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Core Server Infrastructure",
+      "purpose": "Overview of the C-based server components including HTTP handling and server variants",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "HTTP Server Implementation",
+      "purpose": "Detailed documentation of the C HTTP server, request parsing, CGI execution, and URL handling",
+      "parent": "Core Server Infrastructure",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Zookd Server Variants",
+      "purpose": "Explain the different zookd builds (exstack, nxstack, withssp) and their security characteristics",
+      "parent": "Core Server Infrastructure",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Configuration System",
+      "purpose": "Document the zook.conf parser and configuration management system",
+      "parent": "Core Server Infrastructure",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Deployment Scripts",
+      "purpose": "Explain clean-env.sh and clean-ldd.sh for setting up predictable execution environments with ASLR disabled",
+      "parent": "Core Server Infrastructure",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Zoobar Web Application",
+      "purpose": "Overview of the Flask-based Zoobar application and its containerized architecture",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Application Structure and Routing",
+      "purpose": "Document the Flask application initialization, URL routing, middleware, and entry points",
+      "parent": "Zoobar Web Application",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Authentication System",
+      "purpose": "Detail the RPC-based authentication server, token management, and credential handling",
+      "parent": "Zoobar Web Application",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Container Architecture and Isolation",
+      "purpose": "Explain the LXC container setup (static, dynamic, auth, bank, profile) and firewall rules enforcing Zero Trust",
+      "parent": "Zoobar Web Application",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Database Architecture",
+      "purpose": "Document the separated database design (person.db, cred.db, bank.db) and schema validation",
+      "parent": "Zoobar Web Application",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Profile System",
+      "purpose": "Explain user profile scripts, code execution sandbox, and profile functionality (granter, visit tracking, etc.)",
+      "parent": "Zoobar Web Application",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "API and RPC Communication",
+      "purpose": "Document the api.py abstraction layer and FIFO-based RPC mechanism for inter-service communication",
+      "parent": "Zoobar Web Application",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Testing Framework",
+      "purpose": "Overview of the comprehensive testing infrastructure for security validation and exploit testing",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Lab 1: Exploit Testing",
+      "purpose": "Document the check-crash, check-exstack, check-libc, and check-challenge targets for testing exploits against different security variants",
+      "parent": "Testing Framework",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Lab 2: Container Security Tests",
+      "purpose": "Detailed explanation of check-lab2.py testing container isolation, firewall rules, database separation, and token security",
+      "parent": "Testing Framework",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "HTTP Client Testing",
+      "purpose": "Document z_client.py module for automated HTTP testing with wget, including registration, login, transfers, and balance verification",
+      "parent": "Testing Framework",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "Additional Documentation",
+      "purpose": "Supplementary information including licenses, configuration files, and miscellaneous resources",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    },
+    {
+      "title": "License Information",
+      "purpose": "Document the MIT License terms for both the repository root and lab assignments",
+      "parent": "Additional Documentation",
+      "page_notes": [
+        {
+          "content": ""
+        }
+      ]
+    }
+  ]
+}
